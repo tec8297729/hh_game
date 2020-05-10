@@ -7,16 +7,13 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:hh_game/pages/AppHomePage/EleBox/EleBox.dart';
 import 'package:hh_game/utils/audio_utils.dart';
-import 'package:hh_game/utils/util.dart';
 import 'package:jh_debug/jh_debug.dart';
 import 'package:provider/provider.dart';
-import '../../components/UpdateAppVersion/UpdateAppVersion.dart'
-    show getNewAppVer;
-import '../../config/app_config.dart';
+// import '../../components/UpdateAppVersion/UpdateAppVersion.dart'
+//     show getNewAppVer;
 import '../../components/DoubleBackExitApp/DoubleBackExitApp.dart';
 import 'BtnWidget/BtnWidget.dart';
 import 'FaceWidget/FaceWidget.dart';
-import 'SuccessAnimate/SuccessAnimate.dart';
 import 'provider/appHomePageStore.p.dart';
 
 class AppHomePage extends StatefulWidget {
