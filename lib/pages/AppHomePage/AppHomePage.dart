@@ -90,6 +90,7 @@ class _AppHomePageState extends State<AppHomePage> with WidgetsBindingObserver {
         stopMusic();
         break;
       default:
+        stopMusic();
         break;
     }
   }

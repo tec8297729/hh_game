@@ -97,7 +97,7 @@ class _FaceWidgetState extends State<FaceWidget>
   Widget build(BuildContext context) {
     super.build(context);
     return Container(
-      margin: EdgeInsets.only(top: 30.h),
+      margin: EdgeInsets.only(top: 100.h),
       child: Column(
         children: <Widget>[
           _buildFlareActor(),

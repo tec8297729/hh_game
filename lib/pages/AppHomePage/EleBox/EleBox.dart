@@ -37,10 +37,9 @@ class _EleBoxState extends State<EleBox> {
   Widget build(BuildContext context) {
     appStore = Provider.of<AppHomePageStore>(context);
     return Container(
-      // color: Colors.yellow,
       width: boxSize,
       height: boxSize,
-      margin: EdgeInsets.only(top: 60.h),
+      margin: EdgeInsets.only(top: 130.h),
       decoration: BoxDecoration(
         boxShadow: [
           BoxShadow(
