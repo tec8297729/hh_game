@@ -1,6 +1,6 @@
 一款简单的开心乐小游戏，利用flutter制作的APP。<br>
 <div style="display:flex; justify-content: space-evenly;">
-<img src="https://github.com/tec8297729/hh_game/blob/master/demo/hhgame_demo.png?raw=true" width="33%">
+<img src="https://github.com/tec8297729/hh_game/blob/master/demo/hhgame_demo.gif?raw=true" width="33%">
 </div>
 
 <div style="display:flex; justify-content: space-evenly;">
