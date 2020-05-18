@@ -1,5 +1,4 @@
 import 'dart:async';
-
 import 'package:assets_audio_player/assets_audio_player.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -62,7 +61,8 @@ class _AppHomePageState extends State<AppHomePage> with WidgetsBindingObserver {
     // }
     _appStore.init(); // 初始监听
     assetsAudioPlayer.open(Audio('asset/audios/bg.mp3'));
-    Timer(Duration(seconds: 2), () {
+    Timer(Duration(seconds: 6), () {
+      _appStore.setGameState(true);
       setState(() {
         loadFlag = false;
       });
@@ -81,7 +81,7 @@ class _AppHomePageState extends State<AppHomePage> with WidgetsBindingObserver {
   void didChangeAppLifecycleState(AppLifecycleState state) {
     switch (state) {
       case AppLifecycleState.resumed:
-        playMusic();
+        if (musicFlag) playMusic();
         break;
       case AppLifecycleState.paused:
         stopMusic();
