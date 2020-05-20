@@ -1,4 +1,4 @@
-name: hh_game
+name: flutter_flexible
 description: A new Flutter project.
 
 # The following defines the version and build number for your application.
@@ -11,7 +11,7 @@ description: A new Flutter project.
 # In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
 # Read more about iOS versioning at
 # https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
-version: 1.1.0+1
+version: 1.0.0+1
 
 environment:
   sdk: '>=2.6.0 <3.0.0'
@@ -30,17 +30,15 @@ dependencies:
   flutter_screenutil: ^1.1.0
   jh_debug: ^0.3.10
   ana_page_loop: ^0.1.7
-  shared_preferences: ^0.5.6
+  shared_preferences: ^0.5.7+1
   synchronized: ^2.2.0
   ota_update: ^2.2.1
-  package_info: ^0.4.0+13 # app相关信息获取
-  url_launcher: ^5.4.2
-  permission_handler: ^5.0.0+hotfix.4 # 权限
-  get_it: ^4.0.1
+  package_info: ^0.4.0+17 # app相关信息获取
+  url_launcher: ^5.4.5
+  permission_handler: ^5.0.0+hotfix.5 # 权限
+  get_it: ^4.0.2
   fluttertoast: ^4.0.1
   flare_flutter: ^2.0.3
-  assets_audio_player: ^1.4.2+1
-  flutter_spinkit: ^4.1.2+1
 
 dev_dependencies:
   flutter_test:
@@ -51,24 +49,16 @@ dev_dependencies:
 
 # The following section is specific to Flutter.
 flutter:
-  # The following line ensures that the Material Icons font is
-  # included with your application, so that you can use the icons in
-  # the material Icons class.
   uses-material-design: true
   # To add assets to your application, add an assets section, like this:
   assets:
-    - asset/
-    - asset/images/
-    - asset/images/updateVersion/header/
-    - asset/eleItem/
-    - asset/bg/
-    - asset/btn/
-    - asset/audios/
-  fonts:
-    - family: Fish
-      fonts:
-        - asset: asset/fonts/Fish.ttf
-          style: italic
+    - asset/face.flr
+    - asset/images/updateVersion/header/up_header.png
+  # fonts:
+  #   - family: Fish
+  #     fonts:
+  #       - asset: asset/fonts/Fish.ttf
+  #         style: italic
   #   - family: Trajan Pro
   #     fonts:
   #       - asset: fonts/TrajanPro.ttf

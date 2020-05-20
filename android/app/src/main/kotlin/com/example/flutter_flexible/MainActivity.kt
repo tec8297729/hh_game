@@ -1,4 +1,4 @@
-package com.example.hh_game
+package com.example.flutter_flexible
 
 import androidx.annotation.NonNull;
 import io.flutter.embedding.android.FlutterActivity

@@ -1,6 +1,5 @@
 import 'dart:async';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'dart:math' as math;
 
 export 'sp_util.dart' show SpUtil;
 export 'perm_utils.dart' show PermUtils;
@@ -18,14 +17,6 @@ class Util {
         fn(data);
       });
     };
-  }
-
-  static int randomFn(int scopeNum) {
-    return math.Random().nextInt(scopeNum);
-  }
-
-  static double randomDoubleFn(double scopeNum) {
-    return math.Random().nextDouble() * scopeNum;
   }
 
   /// tosat提示
