@@ -70,25 +70,5 @@ class _EleBoxState extends State<EleBox> {
         );
       },
     );
-    // return Consumer<AppHomePageStore>(
-    //   builder: (_, store, __) {
-    //     return GridView.builder(
-    //       physics: NeverScrollableScrollPhysics(), // 禁止滚动
-    //       padding: EdgeInsets.all(0),
-    //       gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
-    //         maxCrossAxisExtent: 230.0.w, // 每个元素的宽度
-    //         mainAxisSpacing: gridSpacing, // 每个元素底部间隔
-    //         crossAxisSpacing: gridSpacing,
-    //       ),
-    //       itemCount: 16, // 总数量
-    //       itemBuilder: (context, int index) {
-    //         return EleItemBox(
-    //           index: store.answerList[index % 8],
-    //           boxIdx: index,
-    //         );
-    //       },
-    //     );
-    //   },
-    // );
   }
 }
