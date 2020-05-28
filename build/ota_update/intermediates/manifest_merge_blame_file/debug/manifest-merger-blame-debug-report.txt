@@ -1,0 +1,24 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="sk.fourq.otaupdate" >
+4
+5    <uses-sdk android:minSdkVersion="16" />
+5-->F:\Program Files\pubCache\hosted\pub.flutter-io.cn\ota_update-2.2.1\android\src\main\AndroidManifest.xml
+6
+7    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+7-->F:\Program Files\pubCache\hosted\pub.flutter-io.cn\ota_update-2.2.1\android\src\main\AndroidManifest.xml:3:5-82
+7-->F:\Program Files\pubCache\hosted\pub.flutter-io.cn\ota_update-2.2.1\android\src\main\AndroidManifest.xml:3:22-80
+8    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+8-->F:\Program Files\pubCache\hosted\pub.flutter-io.cn\ota_update-2.2.1\android\src\main\AndroidManifest.xml:4:5-78
+8-->F:\Program Files\pubCache\hosted\pub.flutter-io.cn\ota_update-2.2.1\android\src\main\AndroidManifest.xml:4:22-76
+9    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+9-->F:\Program Files\pubCache\hosted\pub.flutter-io.cn\ota_update-2.2.1\android\src\main\AndroidManifest.xml:5:5-75
+9-->F:\Program Files\pubCache\hosted\pub.flutter-io.cn\ota_update-2.2.1\android\src\main\AndroidManifest.xml:5:22-73
+10    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+10-->F:\Program Files\pubCache\hosted\pub.flutter-io.cn\ota_update-2.2.1\android\src\main\AndroidManifest.xml:6:5-80
+10-->F:\Program Files\pubCache\hosted\pub.flutter-io.cn\ota_update-2.2.1\android\src\main\AndroidManifest.xml:6:22-78
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->F:\Program Files\pubCache\hosted\pub.flutter-io.cn\ota_update-2.2.1\android\src\main\AndroidManifest.xml:7:5-66
+11-->F:\Program Files\pubCache\hosted\pub.flutter-io.cn\ota_update-2.2.1\android\src\main\AndroidManifest.xml:7:22-64
+12
+13</manifest>

@@ -1,0 +1,111 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.flutter_flexible"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+9        android:targetSdkVersion="28" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->D:\flutter_pro\hh_game\android\app\src\main\AndroidManifest.xml:3:5-67
+14-->D:\flutter_pro\hh_game\android\app\src\main\AndroidManifest.xml:3:22-64
+15    <!-- 允许程序获取网络状态 -->
+16    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 允许程序访问WiFi网络信息 -->
+16-->D:\flutter_pro\hh_game\android\app\src\main\AndroidManifest.xml:5:5-79
+16-->D:\flutter_pro\hh_game\android\app\src\main\AndroidManifest.xml:5:22-76
+17    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 读写外部存储的权限 -->
+17-->D:\flutter_pro\hh_game\android\app\src\main\AndroidManifest.xml:7:5-76
+17-->D:\flutter_pro\hh_game\android\app\src\main\AndroidManifest.xml:7:22-73
+18    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+18-->D:\flutter_pro\hh_game\android\app\src\main\AndroidManifest.xml:10:5-79
+18-->D:\flutter_pro\hh_game\android\app\src\main\AndroidManifest.xml:10:22-77
+19    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 相机权限 -->
+19-->D:\flutter_pro\hh_game\android\app\src\main\AndroidManifest.xml:11:5-80
+19-->D:\flutter_pro\hh_game\android\app\src\main\AndroidManifest.xml:11:22-78
+20    <uses-permission android:name="android.permission.CAMERA" />
+20-->D:\flutter_pro\hh_game\android\app\src\main\AndroidManifest.xml:14:5-64
+20-->D:\flutter_pro\hh_game\android\app\src\main\AndroidManifest.xml:14:22-62
+21    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+21-->[:ota_update] D:\flutter_pro\hh_game\build\ota_update\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-83
+21-->[:ota_update] D:\flutter_pro\hh_game\build\ota_update\intermediates\library_manifest\debug\AndroidManifest.xml:7:22-80
+22    <!--
+23 io.flutter.app.FlutterApplication is an android.app.Application that
+24         calls FlutterMain.startInitialization(this); in its onCreate method.
+25         In most cases you can leave this as-is, but you if you want to provide
+26         additional functionality it is fine to subclass or reimplement
+27         FlutterApplication and put your custom class here.
+28    -->
+29    <application
+29-->D:\flutter_pro\hh_game\android\app\src\main\AndroidManifest.xml:21:5-36:19
+30        android:name="io.flutter.app.FlutterApplication"
+30-->D:\flutter_pro\hh_game\android\app\src\main\AndroidManifest.xml:21:18-66
+31        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+31-->[androidx.core:core:1.1.0] C:\Users\asus\.gradle\caches\transforms-2\files-2.1\a528b13ac93e64cafa3d0480e2c93207\core-1.1.0\AndroidManifest.xml:24:18-86
+32        android:debuggable="true"
+33        android:icon="@mipmap/ic_launcher"
+33-->D:\flutter_pro\hh_game\android\app\src\main\AndroidManifest.xml:21:100-134
+34        android:label="flutter_flexible" >
+34-->D:\flutter_pro\hh_game\android\app\src\main\AndroidManifest.xml:21:67-99
+35        <activity
+35-->D:\flutter_pro\hh_game\android\app\src\main\AndroidManifest.xml:22:9-27:20
+36            android:name="com.example.flutter_flexible.MainActivity"
+36-->D:\flutter_pro\hh_game\android\app\src\main\AndroidManifest.xml:22:19-47
+37            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+37-->D:\flutter_pro\hh_game\android\app\src\main\AndroidManifest.xml:22:114-264
+38            android:hardwareAccelerated="true"
+38-->D:\flutter_pro\hh_game\android\app\src\main\AndroidManifest.xml:22:265-299
+39            android:launchMode="singleTop"
+39-->D:\flutter_pro\hh_game\android\app\src\main\AndroidManifest.xml:22:48-78
+40            android:theme="@style/LaunchTheme"
+40-->D:\flutter_pro\hh_game\android\app\src\main\AndroidManifest.xml:22:79-113
+41            android:windowSoftInputMode="adjustResize" >
+41-->D:\flutter_pro\hh_game\android\app\src\main\AndroidManifest.xml:22:300-342
+42            <intent-filter>
+42-->D:\flutter_pro\hh_game\android\app\src\main\AndroidManifest.xml:23:13-26:29
+43                <action android:name="android.intent.action.MAIN" />
+43-->D:\flutter_pro\hh_game\android\app\src\main\AndroidManifest.xml:24:17-68
+43-->D:\flutter_pro\hh_game\android\app\src\main\AndroidManifest.xml:24:25-66
+44
+45                <category android:name="android.intent.category.LAUNCHER" />
+45-->D:\flutter_pro\hh_game\android\app\src\main\AndroidManifest.xml:25:17-76
+45-->D:\flutter_pro\hh_game\android\app\src\main\AndroidManifest.xml:25:27-74
+46            </intent-filter>
+47        </activity>
+48        <!-- ota_update更新APP插件 -->
+49        <provider
+50            android:name="sk.fourq.otaupdate.OtaUpdateFileProvider"
+51            android:authorities="com.example.flutter_flexible.ota_update_provider"
+52            android:exported="false"
+53            android:grantUriPermissions="true" >
+54            <meta-data
+55                android:name="android.support.FILE_PROVIDER_PATHS"
+56                android:resource="@xml/filepaths" />
+57        </provider>
+58
+59        <!--
+60             Don't delete the meta-data below.
+61             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+62        -->
+63        <meta-data
+63-->D:\flutter_pro\hh_game\android\app\src\main\AndroidManifest.xml:35:9-72
+64            android:name="flutterEmbedding"
+64-->D:\flutter_pro\hh_game\android\app\src\main\AndroidManifest.xml:35:20-51
+65            android:value="2" />
+65-->D:\flutter_pro\hh_game\android\app\src\main\AndroidManifest.xml:35:52-69
+66
+67        <activity
+67-->[:url_launcher] D:\flutter_pro\hh_game\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-11:74
+68            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+68-->[:url_launcher] D:\flutter_pro\hh_game\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-74
+69            android:exported="false"
+69-->[:url_launcher] D:\flutter_pro\hh_game\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:10:13-37
+70            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+70-->[:url_launcher] D:\flutter_pro\hh_game\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-71
+71    </application>
+72
+73</manifest>
