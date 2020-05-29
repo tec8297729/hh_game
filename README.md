@@ -16,3 +16,7 @@
 <div style="display:flex;">
 <img src="https://github.com/tec8297729/hh_game/blob/master/demo/QRCode_258.png?raw=true" width="300px" height="300px">
 </div>
+
+<a href="//www.jonhuu.com/sample-post/1744.html" target="_blank">表情实现总结</a>
+<a href="//www.jonhuu.com/sample-post/1706.html" target="_blank">双面旋转卡牌实现总结</a>
+
