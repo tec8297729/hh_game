@@ -17,8 +17,9 @@
 <img src="https://github.com/tec8297729/hh_game/blob/master/demo/QRCode_258.png?raw=true" width="300px" height="300px">
 </div>
 
+<br>
 
-关键技术点总结文章：<br><br>
+## 关键技术点总结文章：
 
 <div><a href="//www.jonhuu.com/sample-post/1744.html" target="_blank">情绪表情实现总结</a></div>
 
