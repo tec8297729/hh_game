@@ -7,11 +7,9 @@ import '../../utils/log_util.dart';
 void anaPageLoopInit() {
   anaPageLoop.init(
     beginPageFn: (name) {
-      // TODO: 第三方埋点统计开始
       LogUtil.d('待添加：埋点统计开始$name');
     },
     endPageFn: (name) {
-      // TODO: 第三方埋点统计结束
       LogUtil.d('待添加：埋点统计结束$name');
     },
     routeRegExp: [RouteName.appHomePage], // 过滤路由

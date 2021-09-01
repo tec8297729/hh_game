@@ -1,5 +1,4 @@
 import 'dart:async';
-import 'package:assets_audio_player/assets_audio_player.dart';
 import 'package:flutter/material.dart';
 import 'package:hh_game/interface/interface.dart';
 import 'package:hh_game/pages/AppHomePage/SuccessAnimate/SuccessAnimate.dart';
@@ -12,7 +11,7 @@ class AppHomePageStore extends ChangeNotifier {
   bool _gameStop = true;
   List<int> _answerList = [0, 1, 2, 3, 4, 5, 2, 3]; // 渲染块数据
   int _userSuccess = 0;
-  List<EleData> _eleBoxs = List(16); // 块item元素信息
+  List<EleData> _eleBoxs = List.filled(16, EleData()); // 块item元素信息
   List<EleData> _loopEleData = [];
   StreamController<EleData> _eleStrem = StreamController<EleData>();
   int bgImgUrl = Util.randomFn(6); // 游戏背景

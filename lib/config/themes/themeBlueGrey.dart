@@ -3,7 +3,7 @@ part of 'index_theme.dart';
 final ThemeData themeBlueGrey = ThemeData(
   primarySwatch: Colors.blueGrey,
   brightness: Brightness.light,
-  primaryColor: Color(0xff607d8b),
+  primaryColor: Color(0xff607d8b), // 导航bar背景色
   primaryColorBrightness: Brightness.dark,
   primaryColorLight: Color(0xffcfd8dc),
   primaryColorDark: Color(0xff455a64),
@@ -22,9 +22,11 @@ final ThemeData themeBlueGrey = ThemeData(
   buttonColor: Color(0xffe0e0e0),
   toggleableActiveColor: Color(0xff546e7a),
   secondaryHeaderColor: Color(0xffeceff1),
-  textSelectionColor: Color(0xffb0bec5),
-  cursorColor: Color(0xff4285f4),
-  textSelectionHandleColor: Color(0xff90a4ae),
+  textSelectionTheme: TextSelectionThemeData(
+    selectionColor: Color(0xffb0bec5),
+    cursorColor: Color(0xff4285f4),
+    selectionHandleColor: Color(0xff90a4ae),
+  ),
   backgroundColor: Color(0xffb0bec5),
   dialogBackgroundColor: Color(0xffffffff),
   indicatorColor: Color(0xff607d8b),
@@ -67,55 +69,55 @@ final ThemeData themeBlueGrey = ThemeData(
     ),
   ),
   textTheme: TextTheme(
-    display4: TextStyle(
+    headline1: TextStyle(
       color: Color(0x8a000000),
       fontSize: null,
       fontWeight: FontWeight.w400,
       fontStyle: FontStyle.normal,
     ),
-    display3: TextStyle(
+    headline2: TextStyle(
       color: Color(0x8a000000),
       fontSize: null,
       fontWeight: FontWeight.w400,
       fontStyle: FontStyle.normal,
     ),
-    display2: TextStyle(
+    headline3: TextStyle(
       color: Color(0x8a000000),
       fontSize: null,
       fontWeight: FontWeight.w400,
       fontStyle: FontStyle.normal,
     ),
-    display1: TextStyle(
+    headline4: TextStyle(
       color: Color(0x8a000000),
       fontSize: null,
       fontWeight: FontWeight.w400,
       fontStyle: FontStyle.normal,
     ),
-    headline: TextStyle(
+    headline5: TextStyle(
       color: Color(0xdd000000),
       fontSize: null,
       fontWeight: FontWeight.w400,
       fontStyle: FontStyle.normal,
     ),
-    title: TextStyle(
+    headline6: TextStyle(
       color: Color(0xdd000000),
       fontSize: null,
       fontWeight: FontWeight.w400,
       fontStyle: FontStyle.normal,
     ),
-    subhead: TextStyle(
+    subtitle1: TextStyle(
       color: Color(0xdd000000),
       fontSize: null,
       fontWeight: FontWeight.w400,
       fontStyle: FontStyle.normal,
     ),
-    body2: TextStyle(
+    bodyText1: TextStyle(
       color: Color(0xdd000000),
       fontSize: null,
       fontWeight: FontWeight.w400,
       fontStyle: FontStyle.normal,
     ),
-    body1: TextStyle(
+    bodyText2: TextStyle(
       color: Color(0xdd000000),
       fontSize: null,
       fontWeight: FontWeight.w400,
@@ -133,7 +135,7 @@ final ThemeData themeBlueGrey = ThemeData(
       fontWeight: FontWeight.w400,
       fontStyle: FontStyle.normal,
     ),
-    subtitle: TextStyle(
+    subtitle2: TextStyle(
       color: Color(0xff000000),
       fontSize: null,
       fontWeight: FontWeight.w400,
@@ -146,56 +148,57 @@ final ThemeData themeBlueGrey = ThemeData(
       fontStyle: FontStyle.normal,
     ),
   ),
+  // appBar组件文字颜色
   primaryTextTheme: TextTheme(
-    display4: TextStyle(
+    headline1: TextStyle(
       color: Color(0xb3ffffff),
       fontSize: null,
       fontWeight: FontWeight.w400,
       fontStyle: FontStyle.normal,
     ),
-    display3: TextStyle(
+    headline2: TextStyle(
       color: Color(0xb3ffffff),
       fontSize: null,
       fontWeight: FontWeight.w400,
       fontStyle: FontStyle.normal,
     ),
-    display2: TextStyle(
+    headline3: TextStyle(
       color: Color(0xb3ffffff),
       fontSize: null,
       fontWeight: FontWeight.w400,
       fontStyle: FontStyle.normal,
     ),
-    display1: TextStyle(
+    headline4: TextStyle(
       color: Color(0xb3ffffff),
       fontSize: null,
       fontWeight: FontWeight.w400,
       fontStyle: FontStyle.normal,
     ),
-    headline: TextStyle(
+    headline5: TextStyle(
       color: Color(0xffffffff),
       fontSize: null,
       fontWeight: FontWeight.w400,
       fontStyle: FontStyle.normal,
     ),
-    title: TextStyle(
+    headline6: TextStyle(
       color: Color(0xffffffff),
       fontSize: null,
       fontWeight: FontWeight.w400,
       fontStyle: FontStyle.normal,
     ),
-    subhead: TextStyle(
+    subtitle1: TextStyle(
       color: Color(0xffffffff),
       fontSize: null,
       fontWeight: FontWeight.w400,
       fontStyle: FontStyle.normal,
     ),
-    body2: TextStyle(
+    bodyText1: TextStyle(
       color: Color(0xffffffff),
       fontSize: null,
       fontWeight: FontWeight.w400,
       fontStyle: FontStyle.normal,
     ),
-    body1: TextStyle(
+    bodyText2: TextStyle(
       color: Color(0xffffffff),
       fontSize: null,
       fontWeight: FontWeight.w400,
@@ -213,7 +216,7 @@ final ThemeData themeBlueGrey = ThemeData(
       fontWeight: FontWeight.w400,
       fontStyle: FontStyle.normal,
     ),
-    subtitle: TextStyle(
+    subtitle2: TextStyle(
       color: Color(0xffffffff),
       fontSize: null,
       fontWeight: FontWeight.w400,
@@ -227,55 +230,55 @@ final ThemeData themeBlueGrey = ThemeData(
     ),
   ),
   accentTextTheme: TextTheme(
-    display4: TextStyle(
+    headline1: TextStyle(
       color: Color(0xb3ffffff),
       fontSize: null,
       fontWeight: FontWeight.w400,
       fontStyle: FontStyle.normal,
     ),
-    display3: TextStyle(
+    headline2: TextStyle(
       color: Color(0xb3ffffff),
       fontSize: null,
       fontWeight: FontWeight.w400,
       fontStyle: FontStyle.normal,
     ),
-    display2: TextStyle(
+    headline3: TextStyle(
       color: Color(0xb3ffffff),
       fontSize: null,
       fontWeight: FontWeight.w400,
       fontStyle: FontStyle.normal,
     ),
-    display1: TextStyle(
+    headline4: TextStyle(
       color: Color(0xb3ffffff),
       fontSize: null,
       fontWeight: FontWeight.w400,
       fontStyle: FontStyle.normal,
     ),
-    headline: TextStyle(
+    headline5: TextStyle(
       color: Color(0xffffffff),
       fontSize: null,
       fontWeight: FontWeight.w400,
       fontStyle: FontStyle.normal,
     ),
-    title: TextStyle(
+    headline6: TextStyle(
       color: Color(0xffffffff),
       fontSize: null,
       fontWeight: FontWeight.w400,
       fontStyle: FontStyle.normal,
     ),
-    subhead: TextStyle(
+    subtitle1: TextStyle(
       color: Color(0xffffffff),
       fontSize: null,
       fontWeight: FontWeight.w400,
       fontStyle: FontStyle.normal,
     ),
-    body2: TextStyle(
+    bodyText1: TextStyle(
       color: Color(0xffffffff),
       fontSize: null,
       fontWeight: FontWeight.w400,
       fontStyle: FontStyle.normal,
     ),
-    body1: TextStyle(
+    bodyText2: TextStyle(
       color: Color(0xffffffff),
       fontSize: null,
       fontWeight: FontWeight.w400,
@@ -293,7 +296,7 @@ final ThemeData themeBlueGrey = ThemeData(
       fontWeight: FontWeight.w400,
       fontStyle: FontStyle.normal,
     ),
-    subtitle: TextStyle(
+    subtitle2: TextStyle(
       color: Color(0xffffffff),
       fontSize: null,
       fontWeight: FontWeight.w400,
@@ -332,7 +335,7 @@ final ThemeData themeBlueGrey = ThemeData(
       fontStyle: FontStyle.normal,
     ),
     errorMaxLines: null,
-    hasFloatingPlaceholder: true,
+    floatingLabelBehavior: FloatingLabelBehavior.auto,
     isDense: false,
     contentPadding: EdgeInsets.only(top: 12, bottom: 12, left: 0, right: 0),
     isCollapsed: false,
@@ -410,6 +413,7 @@ final ThemeData themeBlueGrey = ThemeData(
     opacity: 1,
     size: 24,
   ),
+  // appBar头组件icon颜色
   primaryIconTheme: IconThemeData(
     color: Color(0xffffffff),
     opacity: 1,

@@ -67,7 +67,6 @@ Future getNewAppVer({int seconds = 360 * 12, bool forceUpdate = false}) async {
         return Dialog(
           backgroundColor: Colors.transparent, // 背景颜色
           child: UpdateAppVersion(
-            // TODO: 传入新版本APP相关参数、版本号、更新内容、下载地址等
             version: resData['version'] ?? '', // 版本号
             info: (resData['info'] as List).cast<String>() ?? [], // 更新内容介绍
             // ios是苹果应用商店地址

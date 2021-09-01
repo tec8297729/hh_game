@@ -130,7 +130,6 @@ class _AppHomePageState extends State<AppHomePage> with WidgetsBindingObserver {
           children: <Widget>[
             FaceWidget(sliderStatus: _appStore.getSliderState),
             EleBox(),
-            // testBtn(),
             BtnWidget(),
           ],
         ),
@@ -204,18 +203,6 @@ class _AppHomePageState extends State<AppHomePage> with WidgetsBindingObserver {
             ),
           ],
         ),
-      ),
-    );
-  }
-
-  Widget testBtn() {
-    return FlatButton(
-      onPressed: () {
-        stopMusic();
-      },
-      child: Text(
-        '内容',
-        style: TextStyle(color: Colors.black, fontSize: 33),
       ),
     );
   }

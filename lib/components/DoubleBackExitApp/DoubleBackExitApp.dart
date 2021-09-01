@@ -71,7 +71,6 @@ class _DoubleBackExitAppState extends State<DoubleBackExitApp>
       return false;
     }
     exit(0);
-    return true;
   }
 
   // 底部提示信息动画控制

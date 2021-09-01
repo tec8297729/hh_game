@@ -5,7 +5,7 @@ import 'dart:math' as math;
 
 // 实现控制器类中的具体方法
 class FlareRateController extends FlareController {
-  FlutterActorArtboard _artboard;
+  FlutterActorArtboard artboard;
   ActorAnimation _actorAnimation;
   double _slidePercent = 0.0;
   double _currentSlide = 0.0; // 当前
@@ -23,7 +23,7 @@ class FlareRateController extends FlareController {
   void initialize(FlutterActorArtboard artboard) {
     // 判断flr画板的名称
     if (artboard.name.compareTo('Artboard') == 0) {
-      _artboard = artboard;
+      artboard = artboard;
       _actorAnimation = artboard.getAnimation('slide'); // 获取动画的画板名称
     }
   }
