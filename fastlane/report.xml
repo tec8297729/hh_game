@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="fastlane.lanes">
+    
+    
+    
+      
+      <testcase classname="fastlane.lanes" name="0: default_platform" time="0.000643">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="1: Switch to android build lane" time="0.000631">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="2: flutter clean" time="3.261149">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="3: clean" time="1.592957">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="4: flutter pub get" time="2.482752">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="5: assembleRelease" time="97.546682">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="6: pgyer" time="9.980249">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="7: say" time="5.44867">
+        
+      </testcase>
+    
+  </testsuite>
+</testsuites>
