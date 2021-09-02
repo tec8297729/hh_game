@@ -1,0 +1,4 @@
+# Pluginfile
+
+gem 'fastlane-plugin-pgyer'
+gem 'fastlane-plugin-versioning_android'
