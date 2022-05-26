@@ -6,7 +6,7 @@ import 'package:hh_game/utils/audio_utils.dart';
 import 'package:hh_game/utils/index.dart' show randomFn;
 export 'package:hh_game/interface/interface.dart' show EleData;
 
-class AppHomePageStore extends ChangeNotifier {
+class HomeStore extends ChangeNotifier {
   SliderState _sliderState = SliderState.normal; // 表情状态
   bool _gameStop = true; // 是否暂停游戏
   final List<int> _answerList = [0, 1, 2, 3, 4, 5, 2, 3]; // 渲染块数据
@@ -15,6 +15,7 @@ class AppHomePageStore extends ChangeNotifier {
   final List<EleData> _loopEleData = [];
   final StreamController<EleData> _eleStrem = StreamController<EleData>();
   int bgImgUrl = randomFn(6); // 游戏背景
+  bool loading = true; // 是否加载中
 
   void init() {
     _eleStrem.stream.listen((EleData eleData) async {
@@ -81,6 +82,12 @@ class AppHomePageStore extends ChangeNotifier {
 
   /// 设置游戏状态, true暂停
   void setGameState(bool flag) => _gameStop = flag;
+
+  /// 设置是否加载中
+  void setLoading(bool flag) {
+    loading = flag;
+    notifyListeners();
+  }
 
   // 重置游戏
   Future<void> restGame() async {

@@ -1,21 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:hh_game/pages/app_main/provider/home_page_store.p.dart';
+import 'package:hh_game/pages/app_main/provider/home_store.p.dart';
 import 'package:hh_game/utils/audio_utils.dart';
 import 'package:hh_game/utils/index.dart';
 import 'package:provider/provider.dart';
 
-class BtnWidget extends StatefulWidget {
+class StartGameBtn extends StatefulWidget {
   @override
-  _BtnWidgetState createState() => _BtnWidgetState();
+  _StartGameBtnState createState() => _StartGameBtnState();
 }
 
-class _BtnWidgetState extends State<BtnWidget>
+class _StartGameBtnState extends State<StartGameBtn>
     with SingleTickerProviderStateMixin {
   late AnimationController controller;
   late Animation<double> animation;
   String btnText = '开始游戏';
-  late AppHomePageStore _appStore;
+  late HomeStore _appStore;
   int btnImg = randomFn(3);
   bool clickFlag = false; // true禁用点击动画
 
@@ -48,7 +48,7 @@ class _BtnWidgetState extends State<BtnWidget>
 
   @override
   Widget build(BuildContext context) {
-    _appStore = Provider.of<AppHomePageStore>(context, listen: false);
+    _appStore = Provider.of<HomeStore>(context, listen: false);
     return Container(
       margin: EdgeInsets.only(top: 100.w),
       child: animateWrap(),

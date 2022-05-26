@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:hh_game/pages/app_main/provider/home_page_store.p.dart';
+import 'package:hh_game/pages/app_main/provider/home_store.p.dart';
 import 'package:provider/provider.dart';
 
 import 'components/eleItem_box.dart';
@@ -12,7 +12,7 @@ class EleBox extends StatefulWidget {
 }
 
 class _EleBoxState extends State<EleBox> {
-  late AppHomePageStore appStore;
+  late HomeStore appStore;
   double boxSize = 900.w;
   double gridSpacing = 2.w;
 
@@ -36,7 +36,7 @@ class _EleBoxState extends State<EleBox> {
 
   @override
   Widget build(BuildContext context) {
-    appStore = Provider.of<AppHomePageStore>(context);
+    appStore = Provider.of<HomeStore>(context);
     return Container(
       width: boxSize,
       height: boxSize,

@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:hh_game/pages/app_main/provider/home_page_store.p.dart';
+import 'package:hh_game/pages/app_main/provider/home_store.p.dart';
 import 'dart:math' as math;
 
 import 'package:provider/provider.dart';
@@ -18,7 +18,7 @@ class _EleItemBoxState extends State<EleItemBox>
     with SingleTickerProviderStateMixin {
   late AnimationController controller;
   late Animation<num> animation;
-  late AppHomePageStore appStore;
+  late HomeStore appStore;
   double boxSize = 100.w;
   bool isEleBack = false;
   late EleData _eleData;
@@ -92,8 +92,8 @@ class _EleItemBoxState extends State<EleItemBox>
 
   @override
   Widget build(BuildContext context) {
-    appStore = Provider.of<AppHomePageStore>(context);
-    return Consumer<AppHomePageStore>(
+    appStore = Provider.of<HomeStore>(context);
+    return Consumer<HomeStore>(
       builder: (_, store, __) {
         return animateBuild();
       },

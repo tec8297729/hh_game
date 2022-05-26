@@ -2,7 +2,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hh_game/config/common_config.dart';
-import 'package:hh_game/pages/app_main/provider/home_page_store.p.dart';
+import 'package:hh_game/pages/app_main/provider/home_store.p.dart';
 import 'package:hh_game/utils/audio_utils.dart';
 import 'package:hh_game/interface/interface.dart' show SliderState;
 import 'package:provider/provider.dart';
@@ -36,7 +36,7 @@ class SuccessAnimate extends StatefulWidget {
 class _SuccessAnimateState extends State<SuccessAnimate> {
   double boxSize = 700.w;
   bool isBack = false;
-  AppHomePageStore? _appStore;
+  HomeStore? _appStore;
 
   @override
   void initState() {
@@ -52,7 +52,7 @@ class _SuccessAnimateState extends State<SuccessAnimate> {
 
   @override
   Widget build(BuildContext context) {
-    _appStore = Provider.of<AppHomePageStore>(context);
+    _appStore = Provider.of<HomeStore>(context);
 
     return WillPopScope(
       onWillPop: () async {
