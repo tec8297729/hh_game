@@ -6,7 +6,7 @@ import 'components/flare_controller.dart';
 import 'components/slider_painter.dart';
 import 'dart:math' as math;
 import 'package:vector_math/vector_math_64.dart' as vector;
-import '../../../interface/interface.dart';
+import 'package:hh_game/interface/interface.dart';
 
 TweenSequence<Color> backgroundTween = TweenSequence<Color>([
   TweenSequenceItem(

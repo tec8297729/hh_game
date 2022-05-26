@@ -1,7 +1,8 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:hh_game/interface/interface.dart';
-import 'package:hh_game/pages/app_main/success_animate/success_animate.dart';
+import 'package:hh_game/pages/app_main/success_animate/success_animate.dart'
+    show showSuccess;
 import 'package:hh_game/utils/audio_utils.dart';
 import 'package:hh_game/utils/index.dart' show randomFn;
 export 'package:hh_game/interface/interface.dart' show EleData;

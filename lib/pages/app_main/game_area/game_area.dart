@@ -2,10 +2,10 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../ele_box/ele_box.dart';
-import '../face_widget/face_widget.dart';
+import './ele_box/ele_box.dart';
+import './face_widget/face_widget.dart';
+import './start_game_btn/start_game_btn.dart';
 import '../provider/home_store.p.dart';
-import '../start_game_btn/start_game_btn.dart';
 
 class GameArea extends StatefulWidget {
   const GameArea({Key? key}) : super(key: key);
