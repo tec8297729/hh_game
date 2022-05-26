@@ -19,10 +19,9 @@
 
 <br>
 
-## 关键技术点总结文章：
+## 关键技术点总结文章
 
 <div><a href="//www.jonhuu.com/sample-post/1744.html" target="_blank">情绪表情实现总结</a></div>
 
 <div><a href="//www.jonhuu.com/sample-post/1706.html" target="_blank">双面旋转卡牌实现总结</a>
 </div>
-
