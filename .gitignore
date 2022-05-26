@@ -10,6 +10,7 @@
 .svn/
 .metadata
 ios2/
+*.log
 
 # IntelliJ related
 *.iml

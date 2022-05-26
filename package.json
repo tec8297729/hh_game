@@ -14,6 +14,7 @@
     "ios-build:pre": "flutter build ios --dart-define=INIT_ENV=pre",
     "ios-build:prod": "flutter build ios --dart-define=INIT_ENV=prod",
     "appkey": "keytool -printcert -jarfile ./build/app/outputs/apk/release/app-release.apk",
-    "upsdk": "flutter upgrade"
+    "upsdk": "flutter upgrade",
+    "tags": "git tag v2.0.0 && git push origin --tags"
   }
 }
