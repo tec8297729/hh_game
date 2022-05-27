@@ -78,12 +78,6 @@ class _EleItemBoxState extends State<EleItemBox>
     if (appStore.gameState) return; // 全局
     // 个体控制
     if (appStore.getEleBox(widget.boxIdx).isClick as bool) {
-      // appStore.diffELe(_eleData);
-      // if (animation.value > 180) {
-      //   controller.animateTo(0);
-      // } else {
-      //   controller.animateTo(180);
-      // }
       setState(() {
         appStore.diffELe(_eleData);
       });

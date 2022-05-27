@@ -68,7 +68,6 @@ class HomeStore extends ChangeNotifier {
       // 成功
       if (_userSuccess == _answerList.length) {
         saveSliderState(SliderState.good);
-        // restGame();
         showSuccess(); // 提示成功
         return;
       }
@@ -156,6 +155,5 @@ class HomeStore extends ChangeNotifier {
       return;
     }
     _eleStrem.sink.add(eleData);
-    // notifyListeners();
   }
 }

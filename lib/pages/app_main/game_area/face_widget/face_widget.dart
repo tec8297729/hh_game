@@ -8,44 +8,6 @@ import 'dart:math' as math;
 import 'package:vector_math/vector_math_64.dart' as vector;
 import 'package:hh_game/interface/interface.dart';
 
-TweenSequence<Color> backgroundTween = TweenSequence<Color>([
-  TweenSequenceItem(
-    tween: ColorTween(
-      begin: const Color(0xFFFF0000),
-      end: const Color(0xFF70C100),
-    ) as Animatable<Color>,
-    weight: 1.0,
-  ),
-  TweenSequenceItem(
-    tween: ColorTween(
-      begin: const Color(0xFF70C100),
-      end: const Color(0xFFFFFFFF),
-    ) as Animatable<Color>,
-    weight: 1.0,
-  ),
-  TweenSequenceItem(
-    tween: ColorTween(
-      begin: const Color(0xFFFFFFFF),
-      end: const Color(0xFFFFFFFF),
-    ) as Animatable<Color>,
-    weight: 1.0,
-  ),
-  TweenSequenceItem(
-    tween: ColorTween(
-      begin: const Color(0xFFFFFFFF),
-      end: const Color(0xFFF8ECBD),
-    ) as Animatable<Color>,
-    weight: 1.0,
-  ),
-  TweenSequenceItem(
-    tween: ColorTween(
-      begin: const Color(0xFFF8ECBD),
-      end: const Color(0xFF20BEFD),
-    ) as Animatable<Color>,
-    weight: 1.0,
-  ),
-]);
-
 class FaceWidget extends StatefulWidget {
   const FaceWidget({Key? key, required this.sliderStatus}) : super(key: key);
   final SliderState sliderStatus;
@@ -105,7 +67,6 @@ class _FaceWidgetState extends State<FaceWidget>
         break;
       case SliderState.normal:
         _flareRateController.updataPercent(0.478);
-        // _flareRateController.updataPercent(0.43);
         break;
       case SliderState.notBad:
         _flareRateController.updataPercent(0.75);
@@ -135,10 +96,11 @@ class _FaceWidgetState extends State<FaceWidget>
       child: Transform(
         transform: Matrix4.translation(_shake()), // 转换矩阵
         child: CircleAvatar(
-          // TODO: 新版本ColorTween中不是animatable<Color>对象，强制转换也无法使用
-          // backgroundColor: backgroundTween.evaluate(
-          //   AlwaysStoppedAnimation(_flareRateController.getPercent),
-          // ),
+          // 动态颜色取值
+          backgroundColor: ColorTween(
+            begin: const Color(0xFFFF0000),
+            end: const Color(0xFF20BEFD),
+          ).evaluate(AlwaysStoppedAnimation(_flareRateController.getPercent)),
           child: faceFLr(),
           radius: 150.w,
         ),
